@@ -11,7 +11,7 @@ class Shoe
   
   def duplicate(BRANDS)
     duplicates = BRANDS.select.map { |b| BRANDS.count(b) > 1 }
-    duplicates.uniq 
+    duplicates.uniq << brand
   end
 
   def cobble
