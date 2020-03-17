@@ -9,7 +9,10 @@ class Shoe
       BRANDS << brand 
   end
   
-  def duplicates()
+  def duplicate(brands)
+    duplicates = brands.select.map { |b| brands.count(b) > 1 }
+    duplicates.uniq 
+  end
 
   def cobble
     self.condition = "new"
