@@ -9,8 +9,8 @@ class Shoe
       BRANDS << brand 
   end
   
-  def duplicate(brands)
-    duplicates = brands.select.map { |b| brands.count(b) > 1 }
+  def duplicate(BRANDS)
+    duplicates = BRANDS.select.map { |b| BRANDS.count(b) > 1 }
     duplicates.uniq 
   end
 
