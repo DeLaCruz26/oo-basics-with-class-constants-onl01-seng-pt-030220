@@ -6,10 +6,10 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    duplicates = BRANDS.select { |b| BRANDS.count(b) > 1 }
-    duplicates.uniq
       BRANDS << brand 
   end
+  
+  def duplicates()
 
   def cobble
     self.condition = "new"
