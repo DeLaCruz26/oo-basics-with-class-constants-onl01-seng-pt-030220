@@ -6,6 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+    duplicates = BRANDS.select { |b| BRANDS.
       BRANDS << brand 
   end
 
