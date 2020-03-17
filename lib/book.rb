@@ -16,5 +16,4 @@ GENRES = []
     @genre = genre
     GENRES << genre 
   end
-
 end
