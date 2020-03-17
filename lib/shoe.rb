@@ -8,7 +8,6 @@ class Shoe
     @brand = brand
     BRANDS.select { |b| BRANDS.count(b) > 1 }.uniq
       BRANDS << brand 
-    end
   end
 
   def cobble
