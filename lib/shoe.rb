@@ -6,7 +6,7 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    BRANDS.select { |b| BRANDS.count(b) > 1 }.uniq
+    BRANDS.select { |b| BRANDS.count(b) > 1 }
       BRANDS << brand 
   end
 
